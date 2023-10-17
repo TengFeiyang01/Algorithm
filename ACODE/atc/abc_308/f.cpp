@@ -13,6 +13,7 @@ void solve() {
     std::vector<std::array<int, 2>> b(m);
 	for (int i = 0; i < m; ++i) std::cin >> b[i][1];
 	for (int i = 0; i < m; ++i) std::cin >> b[i][0];
+		
 	std::priority_queue<std::array<int, 2>> pq;
 	std::sort(a.begin(), a.end());
 	std::sort(b.begin(), b.end(), [&](auto &x, auto &y){
