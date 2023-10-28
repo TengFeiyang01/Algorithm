@@ -12,9 +12,11 @@ void solve() {
     		std::cin >> D[i][j];
     	}
     }
+
     std::vector<i64> dist(N, inf), rdist(N, inf);
     std::vector<bool> st(N);
     dist[0] = 0;
+    
    	for (int i = 0; i < N; ++i) {
    		int t = -1;
    		for (int j = 0; j < N; ++j) {
