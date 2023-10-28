@@ -196,15 +196,20 @@ void solve() {
     for (int i = 0; i < n; ++i) {
     	std::cin >> a[i];
     }
-    Z ans = 0;
-    std::vector<Z> dp(n + 1);
-    // 逆序定义 dp[i]表示从i开始到终点的期望值
-    // dp[i] = sum(dp[i-n]/n) + a[i]/n 
-    for (int i = n - 1; i >= 0; --i) {
-        dp[i] = (dp[i + 1] + a[i]) / n;
-        dp[i] += dp[i + 1];
+    // std::vector<Z> dp(n + 1);
+    // // 逆序定义 dp[i]表示从i开始到终点的期望值
+    // // dp[i] = sum(dp[i-n]/n) + a[i]/n 
+    // for (int i = n - 1; i >= 0; --i) {
+    //     dp[i] = (dp[i + 1] + a[i]) / n;
+    //     dp[i] += dp[i + 1];
+    // }
+    // std::cout << dp[0] << "\n";
+    Z p = Z(1) / n, ans = 0;
+    for (int i = 0; i < n; ++i) {
+        ans += p * a[i];
+        p += p / n;
     }
-    std::cout << dp[0] << "\n";
+    std::cout << ans << "\n";
 }
 
 int main() {
