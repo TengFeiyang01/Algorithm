@@ -33,7 +33,7 @@ void solve() {
         que[Q[i][0]].emplace_back(i, Q[i][1]);
         que[Q[i][1]].emplace_back(i, Q[i][0]);
     }
-
+    
     for (int i = 1; i < n; ++i) {
         int u = find(E[i][1]), v = find(E[i][2]);
         if (vec[u].size() > vec[v].size()) {

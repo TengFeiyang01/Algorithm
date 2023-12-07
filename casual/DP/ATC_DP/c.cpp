@@ -2,8 +2,6 @@
  
 const int inf = 0x3f3f3f3f;
 using i64 = long long;
-using PII = std::pair<int, int>;
-const int N = 1e5 + 13;
 
 void solve() {
     int n;

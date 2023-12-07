@@ -1,3 +1,4 @@
+import math
 from collections import Counter, defaultdict, deque
 from heapq import heappop, heappush, heapify, heapreplace, heappushpop, nlargest, nsmallest
 from bisect import bisect_left, bisect_right
@@ -13,18 +14,21 @@ from functools import lru_cache, reduce, cmp_to_key
 MOD = 10 ** 9 + 7
 DIR = ((-1, 0), (0, 1), (1, 0), (0, -1))
 
-Counter().most_common()
-class Solution:
-    def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
-        s = sortedcontainers.SortedList()
-        ans = [-1, -1]
-        for i, x in enumerate(nums):
-            s.add((nums[i - indexDifference], i - indexDifference))
-            if i >= indexDifference:
-                if len(s):
-                    if abs(s[0][0] - x) >= valueDifference:
-                        return [s[0][1], i]
-                    if abs(s[-1][0] - x) >= valueDifference:
-                        return [s[-1][1], i]
-        return ans
 
+mod = 1000000007
+class Solution:
+    def numberOfSequence(self, n: int, sick: List[int]) -> int:
+        sick = [-1] + sick + [n]
+        ans = 1
+        tot = 0
+        for i in range(1, len(sick)):
+            x = sick[i] - sick[i - 1] - 1
+            if x == 0: continue
+            cur = 0
+            if sick[i - 1] == -1 or sick[i] == n:
+                cur = 1
+            else:
+                cur = pow(2, x - 1, mod)
+            ans *= comb(tot + x, x) * cur
+            tot += x
+        return ans % mod

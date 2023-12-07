@@ -1,22 +1,7 @@
 #include <bits/stdc++.h>
- 
-#define sz(x) int((x).size())
-#define bg(x) begin(x)
-#define all(x) bg(x), end(x)
-#define rall(x) x.rbegin(), x.rend()
-#define pb push_back
-#define eb emplace_back
- 
-#define lb std::lower_bound
-#define ub std::upper_bound
-#define YES "YES\n"
-#define Yes "Yes\n"
-#define NO "NO\n"
-#define No "No\n"
+
 using i64 = long long;
 const i64 inf = 1LL << 60;
-using PII = std::pair<int, int>;
-const int N = 1e5 + 13;
 
 void solve() {
     int n, m;
