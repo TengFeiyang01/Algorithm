@@ -1,0 +1,1 @@
+{"name":"Local: 4999","url":"e:\\0CODE\\VSCODE\\lanqiao\\4999.py","tests":[{"id":1697358104494,"input":"1 5","output":""},{"id":1697358280183,"input":"1 1000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\VSCODE\\lanqiao\\4999.py","group":"local","local":true}

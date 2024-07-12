@@ -1,0 +1,1 @@
+{"name":"Local: t","url":"e:\\0CODE\\VSCODE\\Training\\Py\\t.py","tests":[{"id":1712819121105,"input":"A->B C->B","output":""},{"id":1713666114983,"input":"5 4\n2 3 6 9 12\n1 2 1\n1 2 1\n1 3 1\n1 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\VSCODE\\Training\\Py\\t.py","group":"local","local":true}

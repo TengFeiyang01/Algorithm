@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"c:\\Users\\ytf\\Desktop\\bishi\\5-15华为\\c.py","tests":[{"id":1715773947375,"input":"19\n20 12 30 15 -1 -1 -1 -1 -1 -1 15 5 25 -1 -1 -1 16 -1 22","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ytf\\Desktop\\bishi\\5-15华为\\c.py","group":"local","local":true}

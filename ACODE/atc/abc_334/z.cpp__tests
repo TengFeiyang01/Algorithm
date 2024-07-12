@@ -1,0 +1,5 @@
+[
+	{
+		"test": "atkper 30\n1\nspd 4\n\natk 100\n2\nspd 30\natk 50\n\ndef 10\n1\natkper 20\n\natkper 30\n4\natk 150\ndef 20\nspd 5\natkper 20\n\nspd 15\n0\n\natk 100\n1\nspd 5\n"
+	}
+]

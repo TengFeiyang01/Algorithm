@@ -1,0 +1,1 @@
+{"name":"Local: 530a","url":"e:\\0CODE\\casual\\DS\\530a.py","tests":[{"id":1717069840574,"input":"4\n1 3 2 4","output":""},{"id":1717070273851,"input":"5\n2 0 3 2 4","output":""},{"id":1717070765422,"input":"3\n1 3 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\casual\\DS\\530a.py","group":"local","local":true}

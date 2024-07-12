@@ -1,0 +1,1 @@
+{"name":"Local: dmy659","url":"e:\\0CODE\\casual\\DS\\dmy659.cpp","tests":[{"id":1717117976792,"input":"5 5\n1 2 3 4 5\n2 4 5\n1 1 5 1\n2 1 4\n1 2 3 10\n2 2 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\casual\\DS\\dmy659.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: week-a","url":"e:\\0CODE\\VSCODE\\lanqiao\\week-a.py","tests":[{"id":1711443103382,"input":"4 3\n2 5 4 3\n2 1 3\n3 2 4\n4 2 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\VSCODE\\lanqiao\\week-a.py","group":"local","local":true}

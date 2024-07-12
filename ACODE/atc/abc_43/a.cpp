@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+
+const int inf = 0x3f3f3f3f;
+using i64 = long long;
+
+void solve() {
+    int n;
+    std::cin >> n;
+    std::cout << (n + 1) * n / 2 << "\n";
+}
+
+int main() {
+    std::cin.sync_with_stdio(false);
+    std::cin.tie(0);
+    
+    solve();
+
+    return 0;
+}

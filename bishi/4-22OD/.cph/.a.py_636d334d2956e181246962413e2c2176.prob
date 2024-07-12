@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"c:\\Users\\ytf\\Desktop\\bishi\\4-22OD\\a.py","tests":[{"id":1713784313396,"input":"5 100 10\n10 20 30 40 50\n3 4 5 6 10\n20 30 20 40 30","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ytf\\Desktop\\bishi\\4-22OD\\a.py","group":"local","local":true}
