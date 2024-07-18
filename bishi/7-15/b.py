@@ -24,10 +24,11 @@ def getSmallestString(word, substr):
             if word[j] != '?' and word[j] != substr[j - i]:
                 ok = False
         if ok:
+
             cur = (word[:i] + substr + word[i+m:]).replace('?', 'a')
             if not ans or ans > cur:
                 ans = cur
-    print(-1 if not ans else ans)
+    return '-1' if not ans else ans  
 
 
 def solve() -> None:
