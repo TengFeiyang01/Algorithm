@@ -1,0 +1,17 @@
+[
+	{
+		"test": "abcd\n2\nab\ncd\n"
+	},
+	{
+		"test": "ab\n2\na\nb\n"
+	},
+	{
+		"test": "hhhheeee\n3\nh\nhe\ne\n\n"
+	},
+	{
+		"test": "hithisisvariablestringhello\n2\nring\nhi\n"
+	},
+	{
+		"test": "bbbbbbbb\n3\nb\nbb\nbbb\n"
+	}
+]

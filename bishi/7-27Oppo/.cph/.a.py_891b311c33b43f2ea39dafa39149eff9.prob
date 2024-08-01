@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"e:\\0CODE\\bishi\\7-27Oppo\\a.py","tests":[{"id":1722072378845,"input":"abcdefg\nabc\nfeg","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\7-27Oppo\\a.py","group":"local","local":true}
