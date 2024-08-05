@@ -1,0 +1,1 @@
+{"name":"Local: abc_249D","url":"d:\\Algorithm\\casual\\LingCha_shilian\\abc_249D.go","tests":[{"id":1722823739923,"input":"3\n6 2 3\n","output":"2\n"},{"id":1722823756956,"input":"10\n1 3 2 4 6 8 2 2 3 7\n","output":"62"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Algorithm\\casual\\LingCha_shilian\\abc_249D.go","group":"local","local":true}
