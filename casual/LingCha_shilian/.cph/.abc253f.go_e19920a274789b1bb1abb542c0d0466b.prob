@@ -1,0 +1,1 @@
+{"name":"Local: abc253f","url":"d:\\Algorithm\\casual\\LingCha_shilian\\abc253f.go","tests":[{"id":1723106549276,"input":"3 3 9\n1 1 2 1\n3 2 2\n2 3 2\n3 3 3\n3 3 1\n1 2 3 3\n3 3 2\n3 2 3\n3 1 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Algorithm\\casual\\LingCha_shilian\\abc253f.go","group":"local","local":true}
