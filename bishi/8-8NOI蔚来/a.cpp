@@ -5,11 +5,12 @@ using i64 = long long;
 
 void solve() {
     int n, k;
-    std::cin >> n >> k;
+    std::cin >> k;
     std::string s;
     std::cin >> s;
     std::map<std::string, int> cnt;
     std::string ans;
+    n = s.size();
     int mx = 0;
     for (int i = 0; i + k - 1 < n; ++i) {
     	if (++cnt[s.substr(i, k)] > mx) {
@@ -18,6 +19,9 @@ void solve() {
     	} else if (cnt[s.substr(i, k)] == mx) {
     		ans = std::min(ans, s.substr(i, k));
     	}
+    }
+    if (n < k) {
+        ans = "-1";
     }
     std::cout << ans << "\n";
 }
