@@ -1,0 +1,1 @@
+{"name":"Local: CF1937B","url":"d:\\Algorithm\\casual\\LingCha_shilian\\CF1937B.go","tests":[{"id":1724026748574,"input":"3\n2\n00\n00\n4\n1101\n1100\n8\n00100111\n11101101\n","output":"000\n2\n11000\n1\n001001101\n4\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Algorithm\\casual\\LingCha_shilian\\CF1937B.go","group":"local","local":true}
