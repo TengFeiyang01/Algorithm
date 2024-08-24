@@ -4,7 +4,7 @@ const int inf = 0x3f3f3f3f;
 using i64 = long long;
 
 void solve() {
-    
+	
 }
 
 int main() {

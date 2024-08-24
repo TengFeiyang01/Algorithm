@@ -1,0 +1,11 @@
+[
+	{
+		"test": "aaa\na*a\n"
+	},
+	{
+		"test": "aab\nc*a*b\n"
+	},
+	{
+		"test": "a\n.*\n"
+	}
+]

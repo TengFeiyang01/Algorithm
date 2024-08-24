@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"e:\\0CODE\\bishi\\8-21华子\\a.py","tests":[{"id":1724239106484,"input":"1 3\n2 3\n1 6\n7 4\n","output":""},{"id":1724239113539,"input":"3 5\n1 5\n6 3\n2 2 \n5 4\n1 6\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\8-21华子\\a.py","group":"local","local":true}
