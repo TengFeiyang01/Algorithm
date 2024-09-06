@@ -1,0 +1,5 @@
+[
+	{
+		"test": "3 3 2\n7\n1 123 AB-AB-AB-AB-AB-AB\n0 456 23\n0 456 0\n0 456 8\n1 456 BA-BA-BA-BA-BA-BA\n1 123 CD-EF-AB-AA-AB-AB\n0 123 5\n"
+	}
+]

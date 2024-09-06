@@ -1,0 +1,32 @@
+import sys
+import heapq
+import itertools
+from heapq import heapify, heappop, heappush
+from functools import lru_cache
+from math import *
+from collections import *
+
+
+input = lambda: sys.stdin.readline().rstrip()
+sint = lambda: int(input())
+mint = lambda: map(int, input().split())
+ints = lambda: list(map(int, input().split()))
+
+
+from functools import cache
+
+def solve() -> None:
+    n, m, k = map(int, input().split())
+    k = str(k)
+    ans = 0
+        
+    @cache
+    def dfs(i, is_limit):
+        if i == m:
+            return
+        up = n if not is_limit else int(k[i])
+        for d in range(up+1):
+                    
+
+if __name__ == '__main__':
+    solve()

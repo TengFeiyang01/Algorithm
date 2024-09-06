@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 const int inf = 0x3f3f3f3f;
+
 using i64 = long long;
 
 void solve() {
@@ -10,11 +11,23 @@ void solve() {
     for (int i = 0; i < m; ++i) {
     	std::cin >> queries[i][0] >> queries[i][1];
     }
+
+    // lambda 表达式
+    // std::sort(queries.begin(), queries.end(), [&](auto x, auto y) {
+    //     if (x[1] != y[1]) {
+    //         return x[1] < y[1];
+    //     }
+    //     return x[0] < y[0];
+    // });
     std::sort(queries.begin(), queries.end());
+
+    
     int last = 1, res = 0, ok = 0;
+
     for (int i = 0; i < m; ++i) {   // 枚举所有区间，区间已经按照左端点进行排序
     	int j = i, r = -inf;
-    	while (j < m && queries[j][0] <= last) {  // 双指针遍历所有左端点在st左边的区间右端点的最大值
+        // 双指针遍历所有左端点在st左边的区间右端点的最大值
+    	while (j < m && queries[j][0] <= last) {  
     		r = std::max(r, queries[j][1]);
     		++j;
     	}
