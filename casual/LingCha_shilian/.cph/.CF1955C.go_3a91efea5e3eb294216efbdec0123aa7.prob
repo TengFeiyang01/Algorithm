@@ -1,0 +1,1 @@
+{"name":"Local: CF1955C","url":"d:\\Algorithm\\casual\\LingCha_shilian\\CF1955C.go","tests":[{"id":1724722600317,"input":"6\n4 5\n1 2 4 3\n4 6\n1 2 4 3\n5 20\n2 7 1 8 2\n2 2\n3 2\n2 15\n1 5\n2 7\n5 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Algorithm\\casual\\LingCha_shilian\\CF1955C.go","group":"local","local":true}

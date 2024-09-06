@@ -13,25 +13,54 @@ mint = lambda: map(int, input().split())
 ints = lambda: list(map(int, input().split()))
 
 
-def solve() -> None:
-    n = int(input())  # 第一行输入数组元素个数
-    a = list(map(int, input().split())) # 第二行输入数组
-    t = int(input()) # 第三行输入目标
-    a.sort() # 排序
-    l, r = 0, n-1  # 二分边界
-    while l < r:
-        mid = l + r >> 1
-        if a[mid] >= t:  # 当前的大于等
-            r = mid
+# def solve():
+#     n, m = mint()
+#     s = [input() for _ in range(n)]
+#     ok = True
+#     for i in range(n):
+#         for j in range(m//2):
+#             if s[i][j] != s[i][m - 1 - j]:
+#                 ok = False
+#     print("YES" if ok else "NO")
+#     ok = True
+#     for j in range(m):
+#         for i in range(n//2):
+#             if s[i][j] != s[n - 1 - i][j]:
+#                 ok = False
+#     print("YES" if ok else "NO")
+
+
+def solve():
+    n = int(input())
+    ans = []
+    for i in range(n):
+        s = list(input())
+        if s[0] == s[0].lower():
+            if s.count('_') == 0:
+                res = []
+                for c in s:
+                    if c.upper() == c.upper():
+                        res.append("_")
+                        res.append(c.lower())
+                    else:
+                        res.append(c)
+                ans.append("".join(res))
+            else:
+                ok = True
+                for i in range(1, len(s)):
+                    if s[i - 1] == '_' and s[i] == s[i].upper():
+                        ok = False
+                if ok:
+                    ans.append("".join(s))
+                else:
+                    ans.append("indistinct")
         else:
-            l = mid + 1
-    # 找到的是第一个大于等于的 可能小于t的哪个数比他更接近 需要判断一下
-    if l >= 0 and t - a[l - 1] < a[l] - t:
-        print(a[l - 1])
-    else:
-        print(a[l])
-        
-    
+            ans.append("indistinct")
+    for x in ans:
+        print(x)
+
+
+
 
 if __name__ == '__main__':
     solve()
