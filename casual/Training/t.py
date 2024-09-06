@@ -1,11 +1,7 @@
+# D:\Algorithm\casual\Training\t.py 2024-09-06 by ytf
 import sys
-import heapq
-import itertools
-from heapq import heapify, heappop, heappush
-from functools import lru_cache
-from math import *
-from collections import *
 
+sys.setrecursionlimit(100000)
 
 input = lambda: sys.stdin.readline().rstrip()
 sint = lambda: int(input())
@@ -13,54 +9,42 @@ mint = lambda: map(int, input().split())
 ints = lambda: list(map(int, input().split()))
 
 
-# def solve():
-#     n, m = mint()
-#     s = [input() for _ in range(n)]
-#     ok = True
-#     for i in range(n):
-#         for j in range(m//2):
-#             if s[i][j] != s[i][m - 1 - j]:
-#                 ok = False
-#     print("YES" if ok else "NO")
-#     ok = True
-#     for j in range(m):
-#         for i in range(n//2):
-#             if s[i][j] != s[n - 1 - i][j]:
-#                 ok = False
-#     print("YES" if ok else "NO")
+# 这个是最上面的
+pri = []
+not_prime = [False] * (100001)
+
+# 这是使用线性筛法预处理[1, n]所有的质数
+def pre(n):
+    for i in range(2, n + 1):
+        if not not_prime[i]: # not_prime[i] # 抄错啦 少了 [i]
+            pri.append(i)
+        for pri_j in pri:
+            if i * pri_j > n:
+                break
+            not_prime[i * pri_j] = True
+            if i % pri_j == 0:
+                break
 
 
-def solve():
-    n = int(input())
+def solve() -> None:
+    pre(100000)  # 这个漏掉啦 哼哼
+
+    a = []  # a 初始化
+
+    # 需要修改输入处理
+    b = list(input().split())  # 这里 print(b) 试试
+    for x in b:
+        if x.isdigit(): # 对输入处理 python 内置函数 判断是否是数字 只处理数字
+            a.append(int(x))
+
     ans = []
-    for i in range(n):
-        s = list(input())
-        if s[0] == s[0].lower():
-            if s.count('_') == 0:
-                res = []
-                for c in s:
-                    if c.upper() == c.upper():
-                        res.append("_")
-                        res.append(c.lower())
-                    else:
-                        res.append(c)
-                ans.append("".join(res))
-            else:
-                ok = True
-                for i in range(1, len(s)):
-                    if s[i - 1] == '_' and s[i] == s[i].upper():
-                        ok = False
-                if ok:
-                    ans.append("".join(s))
-                else:
-                    ans.append("indistinct")
-        else:
-            ans.append("indistinct")
-    for x in ans:
-        print(x)
+    # 这里是 a 不是ans
+    for x in a:
+        if not not_prime[x]:
+            ans.append(x)
+    print(*ans)
 
 
-
-
+# 调用别忘记  自测输入 不需要导包
 if __name__ == '__main__':
     solve()
