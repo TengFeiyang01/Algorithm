@@ -1,0 +1,1 @@
+{"name":"Local: cf1924A","url":"d:\\Algorithm\\casual\\LingCha_shilian\\cf1924A.go","tests":[{"id":1725951252853,"input":"3\n2 2 4\nabba\n2 2 3\nabb\n3 3 10\naabbccabab","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Algorithm\\casual\\LingCha_shilian\\cf1924A.go","group":"local","local":true}
