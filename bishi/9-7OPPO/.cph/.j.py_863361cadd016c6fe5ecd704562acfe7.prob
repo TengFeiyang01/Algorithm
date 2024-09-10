@@ -1,0 +1,1 @@
+{"name":"Local: j","url":"e:\\0CODE\\bishi\\9-7OPPO\\j.py","tests":[{"id":1725677195327,"input":"1\n7\n1 2\n1 3\n3 5\n3 7\n2 4\n2 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\9-7OPPO\\j.py","group":"local","local":true}

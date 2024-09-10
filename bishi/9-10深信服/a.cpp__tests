@@ -1,0 +1,8 @@
+[
+	{
+		"test": "3\npush 1\npop\npush 2\npush 3\npop\npop\n"
+	},
+	{
+		"test": "5\npush 1\npush 2\npush 3\npop\npop\npush 4\npush 5\npop\npop\npop\n"
+	}
+]

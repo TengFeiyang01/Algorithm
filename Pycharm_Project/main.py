@@ -1,28 +1,7 @@
-import numpy as np
-from sklearn.svm import SVC
-def solve(data):
-    data = np.array(data, dtype=float)
-    X = data[:, :-1]
-    y = data[:, -1]
+import itertools
 
-    model = SVC(kernel='linear', C=1e5)
-    model.fit(X, y)
-
-    nums = np.abs(model.dual_coef_[0])
-
-    output = [f"{x:.2f}" if x != 0 else "0.00" for x in nums]
-    return output
-
-data = []
-while True:
-    try:
-        line = input().strip()
-        if not line:
-            break
-        data.append(list(map(float, line.split())))
-    except EOFError:
-        break
-
-
-nums = solve(data)
-print(nums)
+a = [1, 2, 3, 4, 5, 6, 7, 8, 1, 3, 5, 7, 2, 4, 6, 8, 1, 4, 7, 2, 5, 8, 3, 6, 1, 5, 2, 7, 4, 8]
+ok = True
+for i in range(1, 9):
+    for j in range(i+1, 9):
+        print(i, j)
