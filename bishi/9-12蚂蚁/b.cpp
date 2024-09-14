@@ -36,8 +36,9 @@ void solve() {
     	tot += v / 2;
 	    ans = ans * qpow(fac[v / 2], mod - 2) % mod;
     }
-    if (odd) ans *= odd;
-    std::cout << tot << "\n";
+    if (odd) {
+        ans = ans * odd % mod;
+    }
     ans = ans * fac[tot] % mod;
     std::cout << ans << "\n";
 }
