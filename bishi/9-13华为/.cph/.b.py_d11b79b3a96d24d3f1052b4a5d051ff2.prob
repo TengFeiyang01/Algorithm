@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"e:\\0CODE\\bishi\\9-13华为\\b.py","tests":[{"id":1726228865763,"input":"F1 01 00 00 00 06 F0 00 00 00 03 03 03","output":""},{"id":1726230770063,"input":"F1 01 00 00 00 04 F0 01 05","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\9-13华为\\b.py","group":"local","local":true}

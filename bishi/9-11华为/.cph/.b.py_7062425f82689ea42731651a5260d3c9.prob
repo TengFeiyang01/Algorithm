@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"e:\\0CODE\\bishi\\9-11华为\\b.py","tests":[{"id":1726054506161,"input":"/hello/hello\ncd .././/world/","output":""},{"id":1726054528858,"input":"/hello/hello\ncd world/.../../.","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\9-11华为\\b.py","group":"local","local":true}
