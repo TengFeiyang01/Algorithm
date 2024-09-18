@@ -1,7 +1,20 @@
-import itertools
+import numpy as np
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 1, 3, 5, 7, 2, 4, 6, 8, 1, 4, 7, 2, 5, 8, 3, 6, 1, 5, 2, 7, 4, 8]
-ok = True
-for i in range(1, 9):
-    for j in range(i+1, 9):
-        print(i, j)
+
+def distance_to_last_true(arr: np.ndarray) -> np.ndarray:
+    result = np.full_like(arr, -1, dtype=np.int64)
+
+    true_indices = np.flatnonzero(arr)
+
+    if true_indices.size == 0:
+        return result
+
+    pos = np.full(arr.shape, -1, dtype=np.int64)
+    pos[true_indices] = true_indices
+    pos = np.maximum.accumulate(pos)
+
+    st = pos >= 0
+    result[st] = np.arange(len(arr))[st] - pos[st]
+
+    return result
+
