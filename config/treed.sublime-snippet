@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+    auto d = [&](std::vector<std::vector<int>>& edges) {
+      int n = edges.size() + 1;
+      std::vector<std::vector<int>> adj(n);
+      for (auto& e : edges) {
+        adj[e[0]].push_back(e[1]);
+        adj[e[1]].push_back(e[0]);
+      }
+      auto fd = [&](int u) {
+        std::queue<int> q;
+        std::vector<int> d(n, -1);
+        q.push(u);
+        d[u] = 0;
+        while (not q.empty()) {
+          int u = q.front();
+          q.pop();
+          for (int v : adj[u])
+            if (d[v] == -1) {
+              d[v] = d[u] + 1;
+              q.push(v);
+            }
+        }
+        return d;
+      };
+      auto d0 = fd(0);
+      int r = std::ranges::max_element(d0) - d0.begin();
+      auto dr = fd(r);
+      return std::ranges::max(dr);
+    };
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>treed</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

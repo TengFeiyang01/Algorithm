@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+struct Edge {
+    int u, v, w;
+    bool operator<(const Edge& b) const {
+        return w < b.w;
+    }
+};
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Edges</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

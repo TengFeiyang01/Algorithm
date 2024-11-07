@@ -1,0 +1,59 @@
+<snippet>
+	<content><![CDATA[
+
+std::vector<int> minp, primes;
+
+void sieve(int n) {
+    minp.assign(n + 1, 0);
+    primes.clear();
+    
+    for (int i = 2; i <= n; i++) {
+        if (minp[i] == 0) {
+            minp[i] = i;
+            primes.push_back(i);
+        }
+        
+        for (auto p : primes) {
+            if (i * p > n) {
+                break;
+            }
+            minp[i * p] = p;
+            if (p == minp[i]) {
+                break;
+            }
+        }
+    }
+}
+		
+int exgcd(int a, int b, int &x, int &y) {
+    if (!b) {
+        x = 1, y = 0;
+        return a;
+    }
+    int g = exgcd(b, a % b, y, x);
+    y -= a / b * x;
+    return g;
+}
+
+int phi(int n) {
+    int res = n;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            while (n % i == 0) {
+                n /= i;
+            }
+            res = res / i * (i - 1);
+        }
+    }
+    if (n > 1) {
+        res = res / n * (n - 1);
+    }
+    return res;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>math</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

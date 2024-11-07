@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+template<typename T>
+std::vector<T> input() {
+    std::vector<T> a;
+    T s;
+    while(std::cin >> s) {
+        a.push_back(s);
+        if(std::cin.get() != ' ') break;
+    }
+    return a;
+}
+
+]]></content>
+  <tabTrigger>readline</tabTrigger>
+  <description>readline</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+#include <bits/stdc++.h>
+
+const int inf = 0x3f3f3f3f;
+using i64 = long long;
+
+void solve() {
+    ${1:}
+}
+
+int main() {
+    std::cin.sync_with_stdio(false);
+    std::cin.tie(0);
+    int t;
+    std::cin >> t;
+    while (t--) 
+        solve();
+
+    return 0;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	-- <tabTrigger>cpp</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

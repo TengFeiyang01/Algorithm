@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+template<typename T>
+struct Tire {
+    int idx = 1;
+    struct node {
+        int s[2],size;
+    };
+    std::vector<node> tr;
+    Tire(int n) {
+        tr.resize(n * 30);
+    }
+
+    const static int M = 30;
+    void insert(T x) {
+        int p = 1;
+        for (int i = M; i >= 0; --i) {
+            int u = x >> i & 1;
+            if (!tr[p].s[u]) {
+                tr[p].s[u] = ++idx;
+            }
+            p = tr[p].s[u];
+            tr[p].size++;
+        }
+    }
+
+    int query(T x, int k) {
+        int p = 1;
+        T res = 0;
+
+        for (int i = M; i >= 0; --i) {
+            int u = x >> i & 1;
+            if (tr[tr[p].s[u]].size >= k) {
+                p = tr[p].s[u];
+            } else {
+                k -= tr[tr[p].s[u]].size;
+                p = tr[p].s[u ^ 1];
+                res |= 1 << i;
+            }
+        }       
+        return res;
+    }
+};]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Trie</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
