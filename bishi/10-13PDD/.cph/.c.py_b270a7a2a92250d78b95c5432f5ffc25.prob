@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"e:\\0CODE\\bishi\\10-13PDD\\c.py","tests":[{"id":1728804702817,"input":"5\nabc\nabz\nazyxwvutsrqponmlkjihgfedcb\nzyxwvutsrqponmlkjihgfedcba\nabcdefghijklmnopqrstuvwzyx","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\10-13PDD\\c.py","group":"local","local":true}

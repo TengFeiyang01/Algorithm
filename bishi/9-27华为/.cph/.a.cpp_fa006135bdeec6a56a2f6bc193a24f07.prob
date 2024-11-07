@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"e:\\0CODE\\bishi\\9-27华为\\a.cpp","tests":[{"id":1727440282466,"input":"4\n1 3\n0 2\n1 3\n0 2","output":"0 2\n1 3\n"},{"id":1727441145414,"input":"4\n1 2 3\n0 2\n0 1 3\n0 2","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\9-27华为\\a.cpp","group":"local","local":true}

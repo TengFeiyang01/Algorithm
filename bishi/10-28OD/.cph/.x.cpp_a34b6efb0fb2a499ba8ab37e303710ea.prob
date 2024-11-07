@@ -1,0 +1,1 @@
+{"name":"Local: x","url":"e:\\0CODE\\bishi\\10-28OD\\x.cpp","tests":[{"id":1730292185266,"input":"1\n1","output":""},{"id":1730292202061,"input":"2\n2 2\n2 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\10-28OD\\x.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"e:\\0CODE\\bishi\\10-16HUAWEI\\c.py","tests":[{"id":1729081107592,"input":"4\n1 2 3 4\n1 2 3 4","output":""},{"id":1729081152703,"input":"3\n2 1 1\n1 1 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\10-16HUAWEI\\c.py","group":"local","local":true}

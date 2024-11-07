@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"e:\\0CODE\\bishi\\9-19华为\\a.py","tests":[{"id":1726747150483,"input":"2 2\nerror = '0' AND (name = 'NE40' OR name = 'NE20')\nerror = '1' AND (name = 'NE40' OR name = 'NE20')\nname NE40\nerror 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\9-19华为\\a.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"e:\\0CODE\\bishi\\9-28网易\\a.py","tests":[{"id":1727489249308,"input":"hi,what's your name?my name is Jane","output":""},{"id":1727489327039,"input":"2 day go","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0CODE\\bishi\\9-28网易\\a.py","group":"local","local":true}
