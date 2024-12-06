@@ -1,0 +1,1 @@
+{"name":"Local: o","url":"/Users/tengfei.yang/0CODE/11-13HUAWEI/o.cpp","tests":[{"id":1731812349446,"input":"6\n60\n55\n50\n30\n20\n10","output":""},{"id":1731812356038,"input":"3\n8\n10\n9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/11-13HUAWEI/o.cpp","group":"local","local":true}

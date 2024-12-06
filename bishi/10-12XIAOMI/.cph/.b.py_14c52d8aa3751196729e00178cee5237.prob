@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"/Users/tengfei.yang/0CODE/10-12XIAOMI/b.py","tests":[{"id":1728722996370,"input":"5\n1 -2 3 -4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/10-12XIAOMI/b.py","group":"local","local":true}

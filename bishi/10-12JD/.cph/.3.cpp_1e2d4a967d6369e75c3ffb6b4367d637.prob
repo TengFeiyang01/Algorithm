@@ -1,0 +1,1 @@
+{"name":"Local: 3","url":"/Users/tengfei.yang/0CODE/10-12JD/3.cpp","tests":[{"id":1733397432327,"input":"5 3\n1 3 4 2\n2 3 1 4\n0 1 2 3\n1 2 4 5\n2 1 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/10-12JD/3.cpp","group":"local","local":true}

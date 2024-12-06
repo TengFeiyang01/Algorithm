@@ -1,0 +1,1 @@
+{"name":"Local: e","url":"/Users/tengfei.yang/0CODE/abc_380/e.py","tests":[{"id":1732610085489,"input":"5 6\n1 5 4\n1 4 2\n2 2\n1 3 2\n1 2 3\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/abc_380/e.py","group":"local","local":true}

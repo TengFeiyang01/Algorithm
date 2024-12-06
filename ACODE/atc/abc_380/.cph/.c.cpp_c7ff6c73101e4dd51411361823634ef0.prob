@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"/Users/tengfei.yang/0CODE/abc_380/c.cpp","tests":[{"id":1732782177430,"input":"5\n20 5 10 30 20\n6\n3 5 8\n3 5 8\n3 5 8\n3 5 8\n3 5 8\n3 5 8\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/abc_380/c.cpp","group":"local","local":true}

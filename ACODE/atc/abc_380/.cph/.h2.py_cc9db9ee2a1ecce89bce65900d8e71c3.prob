@@ -1,0 +1,1 @@
+{"name":"Local: h2","url":"/Users/tengfei.yang/0CODE/abc_380/h2.py","tests":[{"id":1732707237219,"input":"500\n4 1000 3000 4000 2000\n5\n0 1 200\n0 3 250\n1 3 300\n0 2 150\n2 3 250","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/abc_380/h2.py","group":"local","local":true}

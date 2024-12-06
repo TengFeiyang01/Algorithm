@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"/Users/tengfei.yang/0CODE/11-20HUAWEI/b.py","tests":[{"id":1732101660417,"input":"2\n10 8 6\n8 6 6 \n20","output":""},{"id":1732101918389,"input":"3\n10 8 4\n20 17 13\n30 20 10\n50","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/tengfei.yang/0CODE/11-20HUAWEI/b.py","group":"local","local":true}
