@@ -14,21 +14,20 @@ ints = lambda: list(map(int, input().split()))
 
 
 def solve() -> None:
-    n, l, r = map(int, input().split())
-    a = list(map(int, input().split()))
-    for i in range(1, n):
-        x, y = a[i-1], a[i]
-        if x < y:
-            l = x
+    a = ints()
+    n = len(a)
+
+    a.sort()
+    i, j = 0, n-1
+    ans = 0
+    while i < j:
+        if i < j - 1:
+            ans += a[j - 1]
+            i += 1
+            j -= 2
         else:
-            r = x
-        if l > r:
-            print(-1)
-            return
-    if l < a[-1] < r and r - l > 2:
-        print(r - l - 2)
-    else:
-        print(-1)
+            break
+    return ans
 
 if __name__ == '__main__':
     solve()
